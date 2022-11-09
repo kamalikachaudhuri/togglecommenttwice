@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<flow name="commentFlow" doc:id="2e166160-88d8-4496-ae17-649f2833ab4b" >
+		<set-variable value='#[["abc","efg"]]' doc:name='thisWillCauseIssueInXMLWhenYouToggleCommentTwice ["abc","efg"]' doc:id="a0670b4b-1d4b-4a53-809d-e8ecd9d0b5dd" variableName="thisWillCauseIssueInXMLWhenYouToggleCommentTwice" />
+		<set-variable value='#[["abc","efg"]]' doc:name='thisWillNot' doc:id="37f6f9ee-e274-4c50-8f1c-9513dbdd4847" variableName="thisWillNot"/>
+	</flow>
+</mule>
